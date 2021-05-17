@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="section">
+    <div class="container">
+      <img alt="Splendid Spoon logo" src="./assets/ss-logo.webp">
+      <h1 class="subtitle">Demonstration Project - Cubic Subscriptions</h1>
+    </div>
+    <ViewContainer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ViewContainer from './components/View.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ViewContainer
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

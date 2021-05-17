@@ -3,11 +3,11 @@ import { sendToast, sendDebug } from '@/helpers/messaging'
 export default {
   namespaced: true,
   state: () => ({
-    subscriptions: []
+    entities: []
   }),
   mutations: {
-    SET(state, subs) {
-      state.subscriptions = subs
+    SET(state, data) {
+      state.entities = data
     }
     // No other CRUD needed for demo
   },
