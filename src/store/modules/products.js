@@ -5,6 +5,11 @@ export default {
   state: () => ({
     entities: []
   }),
+  getters: {
+    getProduct: (state) => (id) => {
+      return state.entities.find(p => p.id === id)
+    }
+  },
   mutations: {
     SET(state, prods) {
       state.entities = prods

@@ -4,6 +4,7 @@
       <img alt="Splendid Spoon logo" src="./assets/ss-logo.webp">
       <h1 class="subtitle">Demonstration Project - Cubic Subscriptions</h1>
     </div>
+    <hr />
     <ViewContainer />
   </div>
 </template>

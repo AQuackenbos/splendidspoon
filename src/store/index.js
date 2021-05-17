@@ -8,10 +8,12 @@ Vue.use(Vuex)
 
 import Subscriptions from '@/store/modules/subscriptions'
 import Products from '@/store/modules/products'
+import Cart from '@/store/modules/cart'
 
 export default new Vuex.Store({
   modules: {
     products: Products,
-    subscriptions: Subscriptions
+    subscriptions: Subscriptions,
+    cart: Cart
   }
 })
