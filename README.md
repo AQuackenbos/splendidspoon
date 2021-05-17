@@ -16,7 +16,7 @@ npm run serve
 ```
 
 ### Build and run in production
-Compile templates for a production environment.
+Compile templates for a production environment.  Builds into the `dist` directory.
 ```
 npm ci && npm run build
 ```
