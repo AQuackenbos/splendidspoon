@@ -1,4 +1,4 @@
-import { EventBus } from '@/helpers/event-bus'
+import { ToastProgrammatic as Toast } from 'buefy'
 
 const defaultOptions = {
   toast: {
@@ -14,17 +14,14 @@ const defaultOptions = {
 const sendToast = (message, options = {}) => {
   let opts = {...defaultOptions.toast, ...options}
 
-  EventBus.$emit('toastMessage', {
-    ...opts,
-    message: message
-  })
+  Toast.open(message, opts)
 }
 
 const sendDebug = (message, options = {}) => {
   let opts = {...defaultOptions.debug, ...options}
 
   if(opts.display) {
-    EventBus.$emit('debugMessage', message)
+    sendToast(message)
   }
 
   if(opts.console) {

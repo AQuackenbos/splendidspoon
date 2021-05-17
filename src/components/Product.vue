@@ -1,5 +1,5 @@
 <template>
-  <div class="column is-4" v-if="product">
+  <div class="column is-4" v-if="product && subscription">
     <div class="card">
       <header class="card-header">
         <span class="tag is-dark" v-if="product.category">{{ product.category.name }}</span>
