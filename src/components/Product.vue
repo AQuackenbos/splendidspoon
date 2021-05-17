@@ -16,9 +16,13 @@
         </div>
       </div>
       <div class="card-footer">
-        <a @click.prevent="decreaseQty" href="#" class="card-footer-item is-size-3"><span v-if="canDecrease">-</span></a>
+        <b-tooltip label="Remove Product from Box" type="is-danger" class="card-footer-item is-size-3">
+          <a @click.prevent="decreaseQty" href="#"><span v-if="canDecrease">-</span></a>
+        </b-tooltip>
         <div class="card-footer-item is-size-3" v-html="qtyToRender"></div>
-        <a @click.prevent="increaseQty" href="#" class="card-footer-item is-size-3"><span v-if="canIncrease">+</span></a>
+        <b-tooltip label="Add Product to Box" type="is-success" class="card-footer-item is-size-3">
+          <a @click.prevent="increaseQty" href="#"><span v-if="canIncrease">+</span></a>
+        </b-tooltip>
       </div>
     </div>
   </div>

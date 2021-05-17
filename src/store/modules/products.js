@@ -24,7 +24,7 @@ export default {
         })
         .catch(err => {
           commit('SET', [])
-          sendToast('Could not load products!', { type: 'is-error' })
+          sendToast('Could not load products!', { type: 'is-danger' })
           sendDebug(err)
         })
     }

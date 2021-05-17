@@ -60,7 +60,7 @@ export default {
 
     setSubscription({ commit }, subscription) {
       if(!subscription || !subscription.id) {
-        sendToast('Invalid Subscription.', { type: 'is-error'})
+        sendToast('Invalid Subscription.', { type: 'is-danger'})
         return
       }
 
@@ -70,7 +70,7 @@ export default {
 
     updateProduct({ state, getters, dispatch }, product) {
       if(!product || !product.id) {
-        sendToast('Invalid Product.', { type: 'is-error'})
+        sendToast('Invalid Product.', { type: 'is-danger'})
         return
       }
 
@@ -103,13 +103,13 @@ export default {
 
     removeProduct({ state, dispatch }, product) {
       if(!product || !product.id) {
-        sendToast('Invalid Product.', { type: 'is-error'})
+        sendToast('Invalid Product.', { type: 'is-danger'})
         return
       }
 
       let existingIdx = state.products.findIndex(p => p.id === product.id)
       if(existingIdx === -1) {
-        sendToast('Invalid Product.', { type: 'is-error'})
+        sendToast('Invalid Product.', { type: 'is-danger'})
         return
       }
 

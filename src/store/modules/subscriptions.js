@@ -19,7 +19,7 @@ export default {
         })
         .catch(err => {
           commit('SET', [])
-          sendToast('Could not load subscriptions!', { type: 'is-error' })
+          sendToast('Could not load subscriptions!', { type: 'is-danger' })
           sendDebug(err)
         })
     }
