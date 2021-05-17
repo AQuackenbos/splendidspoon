@@ -1,24 +1,22 @@
-# splendidspoon
+# SplendidSpoon Demonstration: Cubic Subscriptions
 
-## Project setup
+## Initial Setup
+Clone the git project, and then install all dependencies.
+
 ```
+git clone https://github.com/AQuackenbos/SplendidSpoon
+cd SplendidSpoon
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Run in a Development server
+Use the Vue CLI server to run in development mode.
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Build and run in production
+Compile templates for a production environment.
 ```
-npm run build
+npm ci && npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
